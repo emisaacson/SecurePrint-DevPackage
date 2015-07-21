@@ -1,0 +1,4 @@
+base:
+  webapp:
+    - dbconnect
+    - cupsconnect

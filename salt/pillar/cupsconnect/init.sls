@@ -1,0 +1,1 @@
+cupshost: localhost
