@@ -27,16 +27,17 @@ having to wait or cancel the job or start a new job.
 2. Clone this repo
 3. (Optional) Set values on the [Pillar](http://docs.saltstack.com/en/2014.7/topics/pillar/index.html)
    if necessary
-4. Run `vagrant up webapp` for the application server
-5. Configure your LDAP servers in `/var/www/cups/config.yaml` in the webapp box
-6. Add some real printers to cups. Get some Low energy BT beacons to place by the printers.
+4. (Optional) Set correct udev rules for your phone in scripts/bootmeup.sh
+5. Run `vagrant up webapp` for the application server
+6. Configure your LDAP servers in `/var/www/cups/config.yaml` in the webapp box
+7. Add some real printers to cups. Get some Low energy BT beacons to place by the printers.
    Populate them in the `printers`, `beacons`, and `beacons_printers` tables in Postgres.
-7. Run `vagrant up android` for the android app environment
-8. Open eclipse in the android box
-9. If prompted, tell eclipse where to find the android SDKs (`/opt/eclipse/android-sdks/`)
-10. Create a project from existing sources (/root/workspace/SecurePrintAndroidApp/)
-11. Remove the duplicate android library from the bluetooth library's /lib directory
-12. Set the value for the API server url in res/values/strings.xml
+8. Run `vagrant up android` for the android app environment
+9. Open eclipse in the android box
+10. If prompted, tell eclipse where to find the android SDKs (`/opt/eclipse/android-sdks/`)
+11. Create a project from existing sources (/root/workspace/SecurePrintAndroidApp/)
+12. Remove the duplicate android library from the bluetooth library's /lib directory
+13. Set the value for the API server url in res/values/strings.xml
 
 You should now be able to:
 
